@@ -22,28 +22,28 @@ class AbsenceTest extends TestCase
         $absence2->setEndDateTime($testDay->modify('+1 month'));
 
         $testDayStart = new DateTime(date('Y-m-18'));
-        $testDayEnd = new DateTime(date('Y-m-29'));
+        $testDayEnd   = new DateTime(date('Y-m-29'));
 
         $absence3 = new \ThePHPWebsite\Entity\Absence();
         $absence3->setStartDateTime($testDayStart->modify('-1 month'));
         $absence3->setEndDateTime($testDayEnd->modify('-1 month'));
 
         $testDayStart = new DateTime(date('Y-m-02'));
-        $testDayEnd = new DateTime(date('Y-m-29'));
+        $testDayEnd   = new DateTime(date('Y-m-29'));
 
         $absence4 = new \ThePHPWebsite\Entity\Absence();
         $absence4->setStartDateTime($testDayStart->modify('+1 month'));
         $absence4->setEndDateTime($testDayEnd->modify('+1 month'));
 
         $testDayStart = new DateTime(date('Y-m-01 00:00:00'));
-        $testDayEnd = new DateTime(date('Y-m-05'));
+        $testDayEnd   = new DateTime(date('Y-m-05'));
 
         $absence5 = new \ThePHPWebsite\Entity\Absence();
         $absence5->setStartDateTime($testDayStart->modify('+1 month'));
         $absence5->setEndDateTime($testDayEnd->modify('+1 month'));
 
         $testDayStart = new DateTime(date('Y-m-20'));
-        $testDayEnd = new DateTime(date('Y-m-d 23:59:59'));
+        $testDayEnd   = new DateTime(date('Y-m-d 23:59:59'));
 
         $absence6 = new \ThePHPWebsite\Entity\Absence();
         $absence6->setStartDateTime($testDayStart);

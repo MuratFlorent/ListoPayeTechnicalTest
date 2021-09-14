@@ -15,10 +15,10 @@ class ListoPayePeriod
      */
     public function isInclusDansPeriode(Absence $absence): bool
     {
-        $startDateTime       = $absence->getStartDateTime();
-        $endDateTime             = $absence->getEndDateTime();
-        $firstDateOfTheMonth           = new \DateTime(date('Y-m-d 00:00:00'));
-        $firstDateOfnextMonth           = new \DateTime(date('Y-m-d 00:00:00'));
+        $startDateTime        = $absence->getStartDateTime();
+        $endDateTime          = $absence->getEndDateTime();
+        $firstDateOfTheMonth  = new \DateTime(date('Y-m-d 00:00:00'));
+        $firstDateOfnextMonth = new \DateTime(date('Y-m-d 00:00:00'));
 
         $firstDayOfMonth     = $firstDateOfTheMonth->modify('first day of this month');
         $firstDayOfNextMonth = $firstDateOfnextMonth->modify('first day of next month');
